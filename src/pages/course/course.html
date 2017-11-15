@@ -1,0 +1,19 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ course?.name || 'Course' }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding *ngIf="course">
+  <ion-item-group>
+    <ng-container *ngFor="let section of course.sections">
+      <ion-item-divider color="light">{{ section?.name }}</ion-item-divider>
+      <button ion-item *ngFor="let chapter of section?.chapters" (click)="onChapterLongPress(section, chapter)">
+        {{ chapter?.name }}
+      </button>
+    </ng-container>
+  </ion-item-group>
+</ion-content>

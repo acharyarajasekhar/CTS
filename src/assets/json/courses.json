@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Angular",
+        "sections": [
+            {
+                "id": 1,
+                "name": "Section 1",
+                "chapters": [
+                    {
+                        "id": 1,
+                        "name": "Chapter 1"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Chapter 2"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Chapter 3"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Section 1",
+                "chapters": [
+                    {
+                        "id": 4,
+                        "name": "Chapter 1"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Chapter 2"
+                    },
+                    {
+                        "id": 6,
+                        "name": "Chapter 3"
+                    }
+                ]
+            }
+        ]
+    }
+]
