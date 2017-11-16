@@ -7,9 +7,12 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-list inset>
+  <ion-list>
     <button ion-item *ngFor="let course of courses" (click)="onCourseSelection(course)">
-      {{ course?.name }}
+      <ion-thumbnail item-start>
+        <img src="{{ course?.pic }}">
+      </ion-thumbnail>
+      <h2>{{ course?.name }}</h2>
     </button>
   </ion-list>
 </ion-content>
